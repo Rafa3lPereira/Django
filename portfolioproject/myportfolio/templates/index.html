@@ -1,0 +1,470 @@
+{%load static%}
+{%load bootstrap5%}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  
+    <title>Portafolio Rafael</title>
+    {% bootstrap_css%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section class="inicio" id="inicio">
+        <div class="contenido">
+            <header>
+                <h1><a href="https://www.linkedin.com/in/rafael-pereira-barrientos-264474253/">|RP|</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portfolio">Proyectos</a></li>
+                        <li><a href="#curriculum">Experiencia</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive">
+                    <a href="#inicio">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="#sobre-mi">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#servicios">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <a href="#portfolio">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </a>
+                    <a href="#curriculum">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                    </a>
+                    <a href="#contacto">
+                            <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </header>
+            <h2 class="frase">Hola, soy Rafael <span class="resaltar">Web Developer.</span></h2>
+        </div>
+
+        <a href="#inicio">
+            <div class="subir">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+        </a>
+
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="contenido fila">
+            <div class="contenedor-img">
+                <img src="{% static 'images/rafa1.jpeg'%}" alt="">
+               
+            </div>
+            
+            <div class="info">
+                <div class="opciones">
+                    <button class="selected" id="btn-info-sobre-mi">Sobre Mí</button>
+                    <button id="btn-skills">Skills</button>
+                </div>
+                <div class="info-opcion" id="info-sobre-mi">
+                    <h2>Mi nombre es <span class="color">Rafael</span></h2>
+                    <p>Tengo 24 años y actualmente soy Ingeniero Informático egresado del Instituto DuocUC, en Puerto Montt. Trabajo en ciberseguridad privada en un banco, lo que me ha permitido desarrollar habilidades de responsabilidad y seriedad en entornos laborales exigentes.</p>
+                    <p>En mi tiempo libre, disfruto jugando videojuegos en línea con amigos y participando en partidos de fútbol. Me considero una persona muy responsable y valoro un ambiente de trabajo grato y agradable, donde pueda colaborar y crecer profesionalmente.</p>
+                </div>
+                <div class="info-opcion" id="info-skills">
+                    <p>CONOCIMIENTO</p>
+
+                    <div class="skill">
+                        <div class="texto">
+                            <h3>HTML</h3>
+                            <h3>95%</h3>
+                        </div>
+                        <div class="contenedor-barra">
+                            <div class="relleno"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="texto">
+                            <h3>CSS</h3>
+                            <h3>90%</h3>
+                        </div>
+                        <div class="contenedor-barra">
+                            <div class="relleno"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="texto">
+                            <h3>JAVASCRIPT</h3>
+                            <h3>85%</h3>
+                        </div>
+                        <div class="contenedor-barra">
+                            <div class="relleno"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="texto">
+                            <h3>BOOSTRAP</h3>
+                            <h3>93%</h3>
+                        </div>
+                        <div class="contenedor-barra">
+                            <div class="relleno"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <div class="contenido">
+            <h2 class="titulo-seccion">MIS SERVICIOS</h2>
+            <div class="items-servicios">
+                <div class="item">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Desarrollo</h3>
+                    <p>Desarrollo de sitios web con diversos lenguajes y frameworks de la programación Informática.</p>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-object-group"></i>
+                    <h3>Diseño</h3>
+                    <p>Diseño de sitios web a medida, con diseños responsivos y personalizados según las necesidades del cliente.</p>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-microphone"></i>
+                    <h3>Branding</h3>
+                    <p>Creamos conexiones conscientes e inconscientes con tu público para influir en sus decisiones de compra, fortaleciendo la identidad de tu marca.</p>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-download"></i>
+                    <h3>Facil Instalación</h3>
+                    <p>La instalación de aplicaciones web en navegadores modernos facilita a los usuarios agregar aplicaciones a sus dispositivos de forma sencilla, brindándoles acceso similar al de cualquier otra aplicación.</p>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                    <h3>Diseño Responsivo</h3>
+                    <p>El diseño responsivo es un enfoque de diseño web que garantiza que un sitio se vea bien y funcione correctamente en diferentes dispositivos y tamaños de pantalla, adaptándose automáticamente para ofrecer la mejor experiencia al usuario.</p>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <h3>Soporte</h3>
+                    <p>Siempre listo para brindarte soporte técnico completo y oportuno. Mi preocupación es completa al garantizar que tu experiencia con nuestro producto sea siempre excelente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PROYECTOS</h2>
+        <div class="galeria">
+            <div class="proyecto" onclick="openModal('modal1')">
+                <img src="{% static 'images/clima.jpg'%}">
+                <div class="overlay">
+                    <h3>API CLIMA</h3>
+                    <p>Proyecto</p>
+                </div>
+            </div>
+            <div class="proyecto" onclick="openModal('modal2')">
+                <img src="{% static 'images/foto3.jpg'%}" alt="">
+
+                <div class="overlay">
+                    <h3>PedroSpinner</h3>
+                    <p>Proyecto</p>
+                </div>
+            </div>
+            <div class="proyecto" onclick="openModal('modal3')">
+                <img src="{% static 'images/foto2.jpg'%}" alt="">
+
+                <div class="overlay">
+                    <h3>SOFTWARE DE ESCRITORIO</h3>
+                    <p>Proyecto</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales -->
+
+    <div id="modal1" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal1')">&times;</span>
+            <h2>API CLIMA</h2>
+            <div class="modal-info">
+                <div class="contenedor-imagen">
+
+                    <img src="{% static 'images/Api.Clima (2).png'%}" alt="Imagen 1">
+
+                </div>
+                <div class="descripcion">
+                    <p>La API de Pronóstico del Tiempo es una aplicación web que permite a los usuarios obtener información meteorológica actualizada para cualquier ciudad del mundo. Utilizando la API de OpenWeatherMap, esta aplicación proporciona datos precisos sobre la temperatura actual, la sensación térmica, la humedad y la descripción del clima para una ciudad específica. La interfaz de usuario está diseñada con colores celestes para crear una experiencia visualmente atractiva y fácil de usar. Esta aplicación es útil para cualquier persona que necesite conocer el clima de una ubicación específica en tiempo real.</p>
+                    <p>Herramientas utilizadas: HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+            <div class="icono-github">
+                <h4 class="h4-modal">Ir al repositorio --> </h4>
+                <a href="https://github.com/Rafa3lPereira"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal2')">&times;</span>
+            <h2>PEDROSPINNER</h2>
+            <div class="modal-info">
+                <div class="contenedor-imagen">
+                    <img src="{% static 'images/Pedrox3.png'%}" alt="Imagen 2">
+                </div>
+                <div class="descripcion">
+                    <p> Proyecto del mitico meme Pedro Pedro Pedro pe, creado con una base de html y css, agregando el audio en formato mp4. y una foto en png y dandole vida a la imagen solo con css. </p>
+                    <p>Herramientas utilizadas: HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+            <div class="icono-github">
+                <h4 class="h4-modal">Ir al repositorio --> </h4>
+                <a href="https://github.com/Rafa3lPereira"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal3')">&times;</span>
+            <h2>Software de Escritorio</h2>
+            <div class="modal-info">
+                <div class="contenedor-imagen">
+                    <img src="{% static 'images/S.Inventario.png'%}" alt="Imagen 3">
+
+                </div>
+                <div class="descripcion">
+                    <p>Sistema de inventario para el casino de Duoc UC utilizando Java y el patrón de diseño MVC (Modelo-Vista-Controlador). Este sistema se implementó en un entorno de desarrollo integrado Apache NetBeans y se conectó a una base de datos MySQL a través de MySQL Workbench.
+                        
+                        La interfaz gráfica del sistema está construida con Java Swing, con un JFrame principal que presenta un formulario único. Este formulario permite realizar diversas operaciones en la tabla de inventario.
+                        
+                        El sistema ofrece las siguientes funcionalidades:
+                        
+                        1. Agregar Producto: Permite registrar nuevos productos con validaciones integradas para evitar inconsistencias en los datos.
+                        
+                        2. Modificar Producto: Permite buscar y actualizar productos existentes en la base de datos.
+                        
+                        3. Eliminar Producto: Permite eliminar un producto después de solicitar confirmación al usuario.
+                        
+                        4. Listar Productos: Presenta todos los productos en un JTable, con la capacidad de filtrar por categoría para una fácil búsqueda.
+                        
+                        El diseño del sistema sigue el patrón de diseño MVC, separando claramente la lógica de negocio (Modelo), la presentación de datos (Vista) y el control de las interacciones del usuario (Controlador). Esta arquitectura facilita el mantenimiento y la escalabilidad del sistema.
+                        
+                        El sistema ha sido desarrollado con Java orientado a objetos, haciendo uso de las mejores prácticas de programación para garantizar la eficiencia y la robustez del código.</p>
+                    
+                </div>
+            </div>
+            <div class="icono-github">
+                <h4 class="h4-modal">Ir al repositorio --> </h4>
+                <a href="https://github.com/Rafa3lPereira"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    
+</section>
+
+    <!-- SECCION CURRICULUM -->
+    <section class="curriculum" id="curriculum">
+        <div class="numeros">
+           
+        </div>
+        <div class="contenido">
+            <h2 class="titulo-seccion">EXPERIENCIA</h2>
+            
+            <div class="recorrido-anios derecha">
+                <div class="dato dato-der">
+                    <div class="anio b1">2024</div>
+                    <div class="linea c1"></div>
+                    <div class="info c1">
+                        <h3>TechSolutions S.A.</h3>
+                        <p>Como programador web en TechSolutions, desarrollé aplicaciones web personalizadas para clientes corporativos, utilizando tecnologías como HTML, CSS, JavaScript y PHP. Trabajé en estrecha colaboración con el equipo de diseño para garantizar una experiencia de usuario intuitiva y atractiva.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recorrido-anios izquierda">
+                <div class="dato dato-izq">
+                    <div class="info c2">
+                        <h3>DigitalCrafters Ltda.</h3>
+                        <p>En DigitalCrafters, contribuí al desarrollo de un sistema de gestión de contenidos (CMS) basado en WordPress para una variedad de clientes. Mi trabajo incluyó la personalización de temas, la creación de plugins y la optimización del rendimiento del sitio.</p>
+                    </div>
+                    <div class="linea c2"></div>
+                    <div class="anio b2">2023</div>
+                </div>
+            </div>
+            <div class="recorrido-anios derecha">
+                <div class="dato dato-der">
+                    <div class="anio b3">2022</div>
+                    <div class="linea c3"></div>
+                    <div class="info c3">
+                        <h3>InnovateWeb Inc.</h3>
+                        <p>En InnovateWeb, participé en el desarrollo de una plataforma de comercio electrónico utilizando el framework Laravel y tecnologías frontend como Vue.js. Trabajé en la implementación de características clave, como la gestión de productos, carrito de compras y procesamiento de pagos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recorrido-anios izquierda">
+                <div class="dato dato-izq">
+                    <div class="info c4">
+                        <h3>WebGenius Solutions.</h3>
+                        <p>En WebGenius Solutions, perteneci a un equipo de desarrollo en la creación de un sistema de gestión de proyectos personalizado utilizando tecnologías como Django y AngularJS. Además, fui responsable de la integración de API de terceros y la implementación de características de seguimiento de tiempo y asignación de tareas.</p>
+                    </div>
+                    <div class="linea c4"></div>
+                    <div class="anio b4">2021</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="banner">
+            <p>¿Tienes algun proyecto?</p>
+            <h2>Trabajemos juntos!</h2>
+            <button>Contactame abajo</button>
+        </div>
+        <div class="contenido">
+            <h2 class="titulo-seccion">CONTACTAME </h2>
+            <div class="fila">
+                <div class="item">
+                    <span class="icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <h3>Mi Ubicación</h3>
+                    <p>Calle Esquisto Azul,N°5755 <br> CHILE</p>
+                </div>
+                <div class="item">
+                    <span class="icono">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <h3>Número Teléfono</h3>
+                    <p>(+56)9 55386240 </p>
+                </div>
+                <div class="item">
+                    <span class="icono">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <h3>Dirección Email</h3>
+                    <p>Rpereirabarrientos@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <div class="col">
+                    <div class="fila-input">
+                        <div class="input">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" placeholder="Nombre*"> 
+                        </div>
+                        <div class="input">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="text" placeholder="Correo*"> 
+                        </div>
+                    </div>
+                    <div class="input">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <input type="text" placeholder="Tema*"> 
+                    </div>
+                    <div class="input">
+                        <i class="fa-regular fa-comment"></i>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button class="btn">Enviar Mensaje</button>
+                </div>
+
+                <div class="col">
+                    <img src="{% static 'images/direccion.png'%}" alt="">
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>RAFAEL WEB DEVELOPER</h2>
+
+        <div class="redes">
+            <span class="red r1">
+                
+            <a href="https://web.facebook.com/login/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+            </span>
+            <span class="red r2">
+            <a href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>    
+            </span>
+            <span class="red r3">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>        
+            </span>
+            <span class="red r4">
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>   
+             </span>
+        </div>
+
+        <p>Todos los derechos reservados <a href="https://www.linkedin.com/in/rafael-pereira-barrientos-264474253/">Rafael Pereira Web Developer</a></p>
+
+    </footer>
+    {% bootstrap_javascript %}
+    <script src="{% static '/js/script.js' %}"></script>
+    <!-- Projects section-->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center">My Projects</h2>
+            <div class="row">
+                {% for proyecto in proyecto %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{{ proyecto.imagen.url }}" class="card-img-top" alt="{{ proyecto.titulo }}">
+                        <div class="card-body">
+                            <h5 class="card-tittle">{{ proyecto.titulo }}</h5>
+                            <p class="card-text">{{ proyecto.descripcion }}</p>
+                            <a href="{{ proyecto.link_sitio }}" class="btn bnt-primary" target="_blank">View Site</a>
+                            <a href="{{ proyecto.link_repositorio }}" class="btn btn-secondary" target="_blank">view Repo</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+    </section>
+    #formulario en el index
+
+<!-- SECCION CONTACTO -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contáctame</h2>
+            <!-- Formulario -->
+            <form method="POST" action="https://formsubmit.co/rpereirabarrientos@gmail.com" class="needs-validation" novalidate>
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="id_nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="id_nombre" name="nombre" required>
+                    <div class="invalid-feedback">Por favor ingresa un nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="id_email" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="id_nombre" name="email" required>
+                    <div class="invalid-feedback">Por favor ingresa un correo.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="id_mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="id_mensaje" name="mensaje" rows="3" required></textarea>
+                    <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
